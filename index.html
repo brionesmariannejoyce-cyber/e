@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<form>
+<h1>Job Application Form</h1>
+<fieldset class="personal">
+<legend>Personal Information</legend>
+
+<div class="row">
+<label for="name">Fullname: </label>
+<input type="text" name="name" id="name"placeholder="E.g.., John"required>
+
+<label class="date-class" for="date"> Date:</label>
+<input type="date" name="date" id="date"required>
+</div>
+<div class="row">
+ <label for="email">Email: </label>
+        <input type="email" 
+name="email" 
+id="email"
+placeholder="john@gmail.com" 
+required>
+</div>
+
+<div class="row">
+<label for="address">Address: </label>
+<input type="text" name="address" id="address" placeholder="exampleCity, 450" required>
+</div>
+<div class="row">
+    <label for="position">Current Employment: </label>
+    <select id="position">
+    <option value="student"> Student</option>
+   <option value="part-time">Part-time</option>
+   <option value="full-time"> Full-time</option> 
+   <option value="unemployed">Unemployed</option>
+   </select>
+    
+    </div>
+</fieldset>
+
+<fieldset>
+<legend>Employment Eligibility</legend>
+<div class="container-ex">
+<p id="experience-label">Do you have any experiences?</p>
+<input type="radio" name="experience" id="yes-option" value="Yes"/>
+<label for="yes-option">Yes</label>
+<input type="radio" name="experience" id="no-option" value="No"/>
+<label for="no-option">No</label>
+</div>
+</fieldset>
+
+<fieldset class="radio-group">
+<legend>Availability</legend>
+<div class="availability">
+<input type="radio" name="availability" id="part-time-option" value="Part-time">
+<label for="part-time-option">Part-time</label>
+<input type="radio" name="availability" id="full-time-option" value="Full-time"/>
+<label for="full-time-option">Full-time</label>
+</div>
+</fieldset>
+
+<fieldset>
+    <legend>Note</legend>
+    <label for="message">Would you like to say something more about us?</label>
+
+    <textarea id="message" name="notes" rows="4" cols="50"></textarea>
+    </fieldset>
+
+<section>
+    <p> all field marks are required</p>
+    <button type="submit">Submit</button>
+    </section>
+
+
+</form>
+</div>
+
+</body>
+</html>
